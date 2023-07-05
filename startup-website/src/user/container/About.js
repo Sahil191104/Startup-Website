@@ -144,8 +144,8 @@ function About(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5 mb-5">
                         <div className="bg-white">
-                            <div className="owl-carousel vendor-carousel">
-                                <img src="img/vendor-1.jpg" alt />
+                            <div className="">
+                                <img src="" alt />
                                 <img src="img/vendor-2.jpg" alt />
                                 <img src="img/vendor-3.jpg" alt />
                                 <img src="img/vendor-4.jpg" alt />

@@ -17,12 +17,12 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { AiFillMedicineBox } from 'react-icons/ai';
-import { AiFillContacts } from 'react-icons/ai';
+import ContactsIcon from '@mui/icons-material/Contacts';
+import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 
 const Doctordetails = [
-  { Tool: 'Contact', to: '/admin/Contact', icon: <AiFillContacts /> },
-  { Tool: 'ShopCart', to: '/admin/ShopCart', icon: <AiFillMedicineBox /> },
+  { Tool: 'Contact', to: '/admin/Contact', icon: <ContactsIcon /> },
+  { Tool: 'Product', to: '/admin/Product', icon: <ProductionQuantityLimitsIcon /> },
 ]
 
 const drawerWidth = 240;
@@ -107,7 +107,7 @@ export default function Layout({ children }) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{bgcolor: 'secondary.main'}}>
+      <AppBar position="fixed" open={open} sx={{ bgcolor: 'info.main' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -122,7 +122,7 @@ export default function Layout({ children }) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Shop Cart
+            Product Deatails
           </Typography>
         </Toolbar>
       </AppBar>
