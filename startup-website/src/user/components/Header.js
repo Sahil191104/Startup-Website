@@ -11,7 +11,7 @@ function Header(props) {
             {/* Spinner End */}
             
             {/* Topbar Start */}
-            <div className="container-fluid bg-dark px-5 d-none d-lg-block">
+            {/* <div className="container-fluid bg-dark px-5 d-none d-lg-block">
                 <div className="row gx-0">
                     <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                         <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
@@ -30,7 +30,7 @@ function Header(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* Topbar End */}
 
             {/* Navbar Start */}
@@ -67,7 +67,7 @@ function Header(props) {
                             <li><Link to="/contact" className="nav-item nav-link">Contact</Link></li>
                         </div>
                         <butaton type="button" className="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fa fa-search" /></butaton>
-                        <a href className="btn btn-primary py-2 px-4 ms-3">Login/SignUp</a>
+                        <Link to="/Auth"><a href className="btn btn-primary py-2 px-4 ms-3">Login/SignUp</a></Link>
                     </div>
                 </nav>
             </div>

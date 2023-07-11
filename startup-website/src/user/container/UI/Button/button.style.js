@@ -12,32 +12,41 @@ const BaseButton = styled.button`
 `;
 
 export const PrimaryButton = styled(BaseButton)`
-    background: ${props => props.disabled ? 'gray' : "#FF6337"};
+    background: ${props => props.disabled ? '#06A3DA' : "#FF6337"};
     color: #fff;
-    
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+
     &:hover {
-        background: ${props => props.disabled ? 'gray' : "#166ab5"};
+        background: ${props => props.disabled ? '#06A3DA' : "#166ab5"};
         color: #fff;
     }
 `;
 
 export const SecondryButton = styled(BaseButton)`
     background: #f0f0f0;
-    color: gray;
+    color: black;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
 
     &:hover {
-        background: #FF6337;
+        background: #06A3DA;
         color: #fff;
     }
 `;
 
 export const OutlinedButton = styled(BaseButton)`
     background: #fff;
-    color: gray;
-    border: 2px solid #FF6337;
+    color: black;
+    border: 2px solid #06A3DA;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
 
     &:hover {
-        background: #FF6337;
+        background: #06A3DA;
         color: #fff;
     }
 `;

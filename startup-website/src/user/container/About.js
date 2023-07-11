@@ -1,5 +1,6 @@
 import React from 'react';
 import Htag from './UI/H1toH6/Htag';
+import Icon from './UI/Icon/Icon';
 
 function About(props) {
     return (
@@ -91,10 +92,10 @@ function About(props) {
                                     <div className="team-img position-relative overflow-hidden">
                                         <img className="img-fluid w-100" src="img/team-1.jpg" alt />
                                         <div className="team-social">
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-twitter fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-facebook-f fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-instagram fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-linkedin-in fw-normal" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-twitter" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-facebook-f" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-instagram" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-linkedin-in" /></a>
                                         </div>
                                     </div>
                                     <div className="text-center py-4">
@@ -108,10 +109,10 @@ function About(props) {
                                     <div className="team-img position-relative overflow-hidden">
                                         <img className="img-fluid w-100" src="img/team-2.jpg" alt />
                                         <div className="team-social">
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-twitter fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-facebook-f fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-instagram fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-linkedin-in fw-normal" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-twitter" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-facebook-f" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-instagram" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-linkedin-in" /></a>
                                         </div>
                                     </div>
                                     <div className="text-center py-4">
@@ -125,10 +126,10 @@ function About(props) {
                                     <div className="team-img position-relative overflow-hidden">
                                         <img className="img-fluid w-100" src="img/team-3.jpg" alt />
                                         <div className="team-social">
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-twitter fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-facebook-f fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-instagram fw-normal" /></a>
-                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><i className="fab fa-linkedin-in fw-normal" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-twitter" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-facebook-f" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-instagram" /></a>
+                                            <a className="btn btn-lg btn-primary btn-lg-square rounded" href><Icon className="fa-linkedin-in" /></a>
                                         </div>
                                     </div>
                                     <div className="text-center py-4">

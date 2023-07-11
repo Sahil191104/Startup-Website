@@ -13,6 +13,7 @@ import Team from '../user/container/Team';
 import Testimonial from '../user/container/Testimonial';
 import Quote from '../user/container/Quote';
 import Contact from '../user/container/Contact';
+import Auth from '../user/container/Auth';
 
 function UserRoute(props) {
     return (
@@ -30,7 +31,7 @@ function UserRoute(props) {
                 <Route path='/testimonial' element={<Testimonial />} />
                 <Route path='/quote' element={<Quote />} />
                 <Route path='/contact' element={<Contact />} />
-
+                <Route path='/Auth' element={<Auth />} />
             </Routes>
             <Footer />
         </>

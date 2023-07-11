@@ -1,4 +1,5 @@
 import React from 'react';
+import Htag from './UI/H1toH6/Htag';
 
 function Services(props) {
     return (
@@ -39,8 +40,8 @@ function Services(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Our Services</h5>
-                            <h1 className="mb-0">Custom IT Solutions for Your Successful Business</h1>
+                            <Htag name="h5tag" className="fw-bold text-primary text-uppercase">Our Services</Htag>
+                            <Htag name="h1tag" className="mb-0">Custom IT Solutions for Your Successful Business</Htag>
                         </div>
                         <div className="row g-5">
                             <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -118,8 +119,8 @@ function Services(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
-                            <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
+                            <Htag name="h5tag" className="fw-bold text-primary text-uppercase">Testimonial</Htag>
+                            <Htag name="h1tag" className="mb-0">What Our Clients Say About Our Digital Services</Htag>
                         </div>
                         <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
                             <div className="testimonial-item bg-light my-4">

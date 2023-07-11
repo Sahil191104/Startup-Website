@@ -1,4 +1,5 @@
 import React from 'react';
+import Htag from './UI/H1toH6/Htag';
 
 const BlogDeatils = (props) => {
 
@@ -44,7 +45,7 @@ const BlogDeatils = (props) => {
                                 {/* Blog Detail Start */}
                                 <div className="mb-5">
                                     <img className="img-fluid w-100 rounded mb-5" src="img/blog-1.jpg" alt />
-                                    <h1 className="mb-4">Diam dolor est labore duo ipsum clita sed et lorem tempor duo</h1>
+                                    <Htag name="h1tag" className="mb-4">Diam dolor est labore duo ipsum clita sed et lorem tempor duo</Htag>
                                     <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
                                         magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
                                         amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at

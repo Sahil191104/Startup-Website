@@ -1,10 +1,11 @@
 import React from 'react';
-import { InputBox } from './input.style';
+import { InputBox, InputError } from './input.style';
 
-function Input({...rest }) {
+function Input({ errorText, ...rest }) {
     return (
         <>
-            <InputBox className='form-control' {...rest} />
+            <InputBox errorText={errorText} className='form-control' {...rest} />
+            <InputError errorText={errorText}>{errorText}</InputError>
         </>
     );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from '../container/UI/Icon/Icon';
+import Input from '../container/UI/Input/Input';
 
 function Footer(props) {
     return (
@@ -17,7 +18,7 @@ function Footer(props) {
                                     <p className="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
                                     <form action>
                                         <div className="input-group">
-                                            <input type="text" className="form-control border-white p-3" placeholder="Your Email" />
+                                            <Input type="text" className="form-control p-3" placeholder="Your Email" />
                                             <button className="btn btn-dark">Sign Up</button>
                                         </div>
                                     </form>

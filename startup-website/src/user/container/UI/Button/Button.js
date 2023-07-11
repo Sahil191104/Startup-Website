@@ -19,7 +19,7 @@ function Button({ children, type, Btndisalbeld }) {
     const CustomsButton = BasebuttonCuttoms();
 
     return (
-        <CustomsButton disabled={Btndisalbeld}>
+        <CustomsButton ClassName='py-2' disabled={Btndisalbeld}>
             {children}
         </CustomsButton>
     );
