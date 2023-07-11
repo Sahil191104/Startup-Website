@@ -1,4 +1,6 @@
 import React from 'react';
+import Htag from './UI/H1toH6/Htag';
+import Titel from './UI/Title/Titel';
 
 function Home(props) {
     return (
@@ -109,10 +111,10 @@ function Home(props) {
                         <div className="row g-5">
                             <div className="col-lg-7">
                                 <div className="section-title position-relative pb-3 mb-5">
-                                    <h5 className="fw-bold text-primary text-uppercase">About Us</h5>
-                                    <h1 className="mb-0">The Best IT Solution With 10 Years of Experience</h1>
+                                    <Htag name="h5tag" className="text-uppercase">About Us</Htag>
+                                    <Htag name="h1tag" className="mb-0">The Best IT Solution With 10 Years of Experience</Htag>
                                 </div>
-                                <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                                <Titel>Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</Titel>
                                 <div className="row g-0 mb-3">
                                     <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                                         <h5 className="mb-3"><i className="fa fa-check text-primary me-3" />Award Winning</h5>
@@ -148,8 +150,8 @@ function Home(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Why Choose Us</h5>
-                            <h1 className="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+                            <Htag name="h5tag" className="text-uppercase">Why Choose Us</Htag>
+                            <Htag name="h1tag" className="mb-0">We Are Here to Grow Your Business Exponentially</Htag>
                         </div>
                         <div className="row g-5">
                             <div className="col-lg-4">
@@ -202,8 +204,8 @@ function Home(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Our Services</h5>
-                            <h1 className="mb-0">Custom IT Solutions for Your Successful Business</h1>
+                            <Htag name="h5tag" className="text-uppercase">Our Services</Htag>
+                            <Htag name="h1tag" className="mb-0">Custom IT Solutions for Your Successful Business</Htag>
                         </div>
                         <div className="row g-5">
                             <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -282,8 +284,8 @@ function Home(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Pricing Plans</h5>
-                            <h1 className="mb-0">We are Offering Competitive Prices for Our Clients</h1>
+                            <Htag name="h5tag" className="text-uppercase">Pricing Plans</Htag>
+                            <Htag name="h1tag" className="mb-0">We are Offering Competitive Prices for Our Clients</Htag>
                         </div>
                         <div className="row g-0">
                             <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
@@ -351,8 +353,8 @@ function Home(props) {
                         <div className="row g-5">
                             <div className="col-lg-7">
                                 <div className="section-title position-relative pb-3 mb-5">
-                                    <h5 className="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                                    <h1 className="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                                    <Htag name="h5tag" className="text-uppercase">Request A Quote</Htag>
+                                    <Htag name="h1tag" className="mb-0">Need A Free Quote? Please Feel Free to Contact Us</Htag>
                                 </div>
                                 <div className="row gx-3">
                                     <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
@@ -410,8 +412,8 @@ function Home(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
-                            <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
+                            <Htag name="h5tag" className="text-uppercase">Testimonial</Htag>
+                            <Htag name="h1tag" className="mb-0">What Our Clients Say About Our Digital Services</Htag>
                         </div>
                         <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
                             <div className="testimonial-item bg-light my-4">
@@ -471,8 +473,8 @@ function Home(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
-                            <h1 className="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+                            <Htag name="h5tag" className="text-uppercase">Team Members</Htag>
+                            <Htag name="h1tag" className="mb-0">Professional Stuffs Ready to Help Your Business</Htag>
                         </div>
                         <div className="row g-5">
                             <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
@@ -535,8 +537,8 @@ function Home(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Latest Blog</h5>
-                            <h1 className="mb-0">Read The Latest Articles from Our Blog Post</h1>
+                            <Htag name="h5tag" className="text-uppercase">Latest Blog</Htag>
+                            <Htag name="h1tag" className="mb-0">Read The Latest Articles from Our Blog Post</Htag>
                         </div>
                         <div className="row g-5">
                             <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Input from './UI/Input/Input';
 
 function Contact(props) {
     return (
@@ -83,13 +84,13 @@ function Contact(props) {
                                 <form>
                                     <div className="row g-3">
                                         <div className="col-md-6">
-                                            <input type="text" className="form-control border-0 bg-light px-4" placeholder="Your Name" style={{ height: 55 }} />
+                                            <Input type="text" placeholder="Your Name" />
                                         </div>
                                         <div className="col-md-6">
-                                            <input type="email" className="form-control border-0 bg-light px-4" placeholder="Your Email" style={{ height: 55 }} />
+                                            <Input type="email" placeholder="Your Email" />
                                         </div>
                                         <div className="col-12">
-                                            <input type="text" className="form-control border-0 bg-light px-4" placeholder="Subject" style={{ height: 55 }} />
+                                            <Input type="text" placeholder="Subject" />
                                         </div>
                                         <div className="col-12">
                                             <textarea className="form-control border-0 bg-light px-4 py-3" rows={4} placeholder="Message" defaultValue={""} />

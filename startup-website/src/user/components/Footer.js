@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../container/UI/Icon/Icon';
 
 function Footer(props) {
     return (
@@ -41,10 +42,10 @@ function Footer(props) {
                                             <p className="mb-0">+012 345 67890</p>
                                         </div>
                                         <div className="d-flex mt-4">
-                                            <a className="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><i className="fab fa-twitter fw-normal" /></a>
-                                            <a className="btn btn-primary btn-square me-2" href="https://facebook.com/freewebsitecode/"><i className="fab fa-facebook-f fw-normal" /></a>
-                                            <a className="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><i className="fab fa-linkedin-in fw-normal" /></a>
-                                            <a className="btn btn-primary btn-square" href="https://youtube.com/freewebsitecode/"><i className="fab fa-youtube fw-normal" /></a>
+                                            <a className="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><Icon className="fa-twitter" /></a>
+                                            <a className="btn btn-primary btn-square me-2" href="https://facebook.com/freewebsitecode/"><Icon className="fa-facebook-f" /></a>
+                                            <a className="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><Icon className="fa-linkedin-in" /></a>
+                                            <a className="btn btn-primary btn-square" href="https://youtube.com/freewebsitecode/"><Icon className="fa-youtube" /></a>
                                         </div>
                                     </div>
                                     <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">

@@ -1,4 +1,5 @@
 import React from 'react';
+import Htag from './UI/H1toH6/Htag';
 
 function About(props) {
     return (
@@ -81,8 +82,8 @@ function About(props) {
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-                            <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
-                            <h1 className="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+                            <Htag name="h5tag" className="fw-bold text-primary text-uppercase">Team Members</Htag>
+                            <Htag name="h1tag" className="mb-0">Professional Stuffs Ready to Help Your Business</Htag >
                         </div>
                         <div className="row g-5">
                             <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
