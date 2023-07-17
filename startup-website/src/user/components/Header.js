@@ -65,6 +65,7 @@ function Header(props) {
                                 </div>
                             </div>
                             <li><Link to="/contact" className="nav-item nav-link">Contact</Link></li>
+                            <li><Link to="/counter" className="nav-item nav-link">Counter</Link></li>
                         </div>
                         <butaton type="button" className="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fa fa-search" /></butaton>
                         <Link to="/Auth"><a href className="btn btn-primary py-2 px-4 ms-3">Login/SignUp</a></Link>
