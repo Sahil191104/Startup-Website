@@ -19,8 +19,10 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import BadgeIcon from '@mui/icons-material/Badge';
 
 const Doctordetails = [
+  { Tool: 'Employee', to: '/admin/Employee', icon: <BadgeIcon /> },
   { Tool: 'Contact', to: '/admin/Contact', icon: <ContactsIcon /> },
   { Tool: 'Product', to: '/admin/Product', icon: <ProductionQuantityLimitsIcon /> },
 ]
