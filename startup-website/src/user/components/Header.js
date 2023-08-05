@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../container/Context/ThemeContext';
 
 function Header(props) {
+    let theme = useContext(ThemeContext);
+
     return (
         <>
             {/* Spinner Start */}
@@ -9,28 +12,30 @@ function Header(props) {
                 <div className="spinner" />
             </div> */}
             {/* Spinner End */}
-            
+
             {/* Topbar Start */}
-            {/* <div className="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div className={`container-fluid bg-dark px-5 d-none d-lg-block ${theme.theme}`}>
                 <div className="row gx-0">
                     <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                         <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
-                            <small className="me-3 text-light"><i className="fa fa-map-marker-alt me-2" />Location, City, Country</small>
-                            <small className="me-3 text-light"><i className="fa fa-phone-alt me-2" />+012 345 6789</small>
-                            <small className="text-light"><i className="fa fa-envelope-open me-2" />info@example.com</small>
+                            <small className={`me-3 text-light ${theme.theme}`}><i className="fa fa-map-marker-alt me-2" />Location, City, Country</small>
+                            <small className={`me-3 text-light ${theme.theme}`}><i className="fa fa-phone-alt me-2" />+012 345 6789</small>
+                            <small className={`text-light ${theme.theme}`}><i className="fa fa-envelope-open me-2" />info@example.com</small>
                         </div>
                     </div>
                     <div className="col-lg-4 text-center text-lg-end">
                         <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
-                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://freewebsitecode.com/"><i className="fab fa-twitter fw-normal" /></a>
-                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://facebook.com/freewebsitecode/"><i className="fab fa-facebook-f fw-normal" /></a>
-                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://freewebsitecode.com/"><i className="fab fa-linkedin-in fw-normal" /></a>
-                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://freewebsitecode.com/"><i className="fab fa-instagram fw-normal" /></a>
-                            <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://youtube.com/freewebsitecode/"><i className="fab fa-youtube fw-normal" /></a>
+                            <a className= {`btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2 ${theme.theme}`} href="https://freewebsitecode.com/"><i className="fab fa-twitter fw-normal" /></a>
+                            <a className= {`btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2 ${theme.theme}`} href="https://facebook.com/freewebsitecode/"><i className="fab fa-facebook-f fw-normal" /></a>
+                            <a className= {`btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2 ${theme.theme}`} href="https://freewebsitecode.com/"><i className="fab fa-linkedin-in fw-normal" /></a>
+                            <a className= {`btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2 ${theme.theme}`} href="https://freewebsitecode.com/"><i className="fab fa-instagram fw-normal" /></a>
+                            <div className="form-check form-switch">
+                                <input onClick={() => theme.togletheme(theme.theme)} className="form-check-input ms-1 bg-info" type="checkbox" role="switch" id="flexSwitchCheckChecked" defaultChecked />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
             {/* Topbar End */}
 
             {/* Navbar Start */}
