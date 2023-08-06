@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Htag from './UI/H1toH6/Htag';
 import Titel from './UI/Title/Titel';
+import { IntroContext } from './Context/IntroContext';
 
 function Home(props) {
+
+    let intro = useContext(IntroContext);
+
     return (
         <div>
             {/* Navbar Start */}
@@ -15,8 +19,8 @@ function Home(props) {
                                 <div className="p-3" style={{ maxWidth: 900 }}>
                                     <h5 className="text-white text-uppercase mb-3 animated slideInDown">Creative &amp; Innovative</h5>
                                     <h1 className="display-1 text-white mb-md-4 animated zoomIn">Creative &amp; Innovative Digital Solution</h1>
-                                    <a href="quote.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
-                                    <a href className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                                    <a onClick={() => intro.introdata(intro.intro)} className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Started</a>
+                                    <a onClick={() => intro.introdata(intro.intro)} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Introduction</a>
                                 </div>
                             </div>
                         </div>
@@ -26,8 +30,8 @@ function Home(props) {
                                 <div className="p-3" style={{ maxWidth: 900 }}>
                                     <h5 className="text-white text-uppercase mb-3 animated slideInDown">Creative &amp; Innovative</h5>
                                     <h1 className="display-1 text-white mb-md-4 animated zoomIn">Creative &amp; Innovative Digital Solution</h1>
-                                    <a href="quote.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
-                                    <a href className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                                    <a onClick={() => intro.introdata(intro.intro)} className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Started</a>
+                                    <a onClick={() => intro.introdata(intro.intro)} className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Introduction</a>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +68,7 @@ function Home(props) {
                 {/* Full Screen Search End */}
 
                 {/* Facts Start */}
-                <div className="container-fluid facts py-5 pt-lg-0">
+                <div className={`container-fluid facts py-5 pt-lg-0 ${intro.intro}`} >
                     <div className="container py-5 pt-lg-0">
                         <div className="row gx-0">
                             <div className="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
@@ -106,7 +110,7 @@ function Home(props) {
                 {/* Facts Start */}
 
                 {/* About Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="row g-5">
                             <div className="col-lg-7">
@@ -147,7 +151,7 @@ function Home(props) {
                 {/* About End */}
 
                 {/* Features Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
                             <Htag name="h5tag" className="text-uppercase">Why Choose Us</Htag>
@@ -201,7 +205,7 @@ function Home(props) {
                 {/* Features Start */}
 
                 {/* Service Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
                             <Htag name="h5tag" className="text-uppercase">Our Services</Htag>
@@ -281,7 +285,7 @@ function Home(props) {
                 {/* Service End */}
 
                 {/* Pricing Plan Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
                             <Htag name="h5tag" className="text-uppercase">Pricing Plans</Htag>
@@ -348,7 +352,7 @@ function Home(props) {
                 {/* Pricing Plan End */}
 
                 {/* Quote Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="row g-5">
                             <div className="col-lg-7">
@@ -409,7 +413,7 @@ function Home(props) {
                 {/* Quote End */}
 
                 {/* Testimonial Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: 600 }}>
                             <Htag name="h5tag" className="text-uppercase">Testimonial</Htag>
@@ -470,7 +474,7 @@ function Home(props) {
                 {/* Testimonial End */}
 
                 {/* Team Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
                             <Htag name="h5tag" className="text-uppercase">Team Members</Htag>
@@ -534,7 +538,7 @@ function Home(props) {
                 {/* Team End */}
 
                 {/* Blog Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div className={`container-fluid py-5 wow fadeInUp ${intro.intro}`} data-wow-delay="0.1s">
                     <div className="container py-5">
                         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
                             <Htag name="h5tag" className="text-uppercase">Latest Blog</Htag>
@@ -596,28 +600,8 @@ function Home(props) {
                     </div>
                 </div>
                 {/* Blog Start */}
-
-                {/* Vendor Start */}
-                <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div className="container py-5 mb-5">
-                        <div className="bg-white">
-                            <div className="owl-carousel vendor-carousel">
-                                <img src="img/vendor-1.jpg" alt />
-                                <img src="img/vendor-2.jpg" alt />
-                                <img src="img/vendor-3.jpg" alt />
-                                <img src="img/vendor-4.jpg" alt />
-                                <img src="img/vendor-5.jpg" alt />
-                                <img src="img/vendor-6.jpg" alt />
-                                <img src="img/vendor-7.jpg" alt />
-                                <img src="img/vendor-8.jpg" alt />
-                                <img src="img/vendor-9.jpg" alt />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* Vendor End */}
             </div>
-        </div>
+        </div >
     );
 }
 

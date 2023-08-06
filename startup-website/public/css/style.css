@@ -622,3 +622,11 @@ section {
     color: #fff !important;
     background-color: #091E3E !important;
 }
+
+.yes {
+    display: inline;
+}
+
+.no {
+    display: none;
+}
